@@ -75,21 +75,10 @@ dietary_tags = {
 
     # 🍖 Halal / Non-Halal Classification
     "halal": {
-        "excluded_allergen_groups": ["pork"],
+        "excluded_allergen_groups": [],  # ✅ Remove pork from here
         "excluded_ingredients": [
-            # Non-halal ingredients
             "pork", "bacon", "ham", "gelatin", "alcohol", "non_halal_meat"
         ],
         "notes": "Follows halal food laws — no pork, alcohol, or non-halal meat"
-    },
-    
-    "non_halal": {
-        "required_ingredients": [
-            "pork", "bacon", "ham", "gelatin", "alcohol", "non_halal_meat"
-        ],
-        "notes": "Contains ingredients not allowed in halal diet"
-    },
-    "non_veg": {
-        "notes": "Default tag for any recipe containing meat or fish (no exclusions)"
     },
 }
